@@ -1,0 +1,180 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: (
+  "primary": #242423,
+  "secondary": #3D3B37,
+  "third": #EFF2F4,
+  "fourth": #D1D1D1,
+  "fifth": #730707,
+  "sixth": green,
+  "seventh": rgb(216, 4, 4),
+  "eighth": #fff,
+  "ninth":#FFC107,
+  "tenth":blue
+);
+$font-sizes: (
+  1: 40px,
+  2: 32px,
+  3: 28px,
+  4: 24px,
+  5: 20px,
+  6: 18px,
+  7: 16px,
+  8: 14px,
+  9: 12px,
+);
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: #3D3B37;
+  border: 1px solid #242423;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #85847f;
+}
+.cursor {
+  cursor: pointer;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.card {
+  background-image: linear-gradient(to bottom, #3e5076, #364566, #2e3a56, #263047, #1e2638);
+}
+
+.backHome {
+  color: #fff;
+}
+
+.borderSingle {
+  background: linear-gradient(rgb(36, 34, 34), rgb(21, 21, 21)) padding-box,
+    linear-gradient(to right, #b79a44, #FFC107) border-box;
+  border-radius: 3em 0;
+  border: 4px solid transparent;
+}
+
+.backHome:hover {
+  color: #b9b7b7;
+}
+
+.loadButton:hover {
+  .spinElement {
+    position: relative;
+    animation: spin 1.2s linear infinite;
+    animation-iteration-count: 1;
+  }
+}
+.shipImg{
+  width: 100%;
+  height: 200px;
+}
+.singleShipImg{
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+.gradientBg{
+  background-image: linear-gradient(to bottom, #3e5076, #364566, #2e3a56, #263047, #1e2638);
+}
+.topicsList:nth-child(odd){
+  color: #c5bfbf;
+}
+.topicsList:nth-child(even){
+  color: #fff;
+}
+.scrollable-menu-topic {
+  height: auto;
+  max-height: 70vh;
+  overflow-x: hidden;
+}
+.scrollable-menu-forum{
+  @extend .scrollable-menu-topic 
+}
+.heightTopic{
+  height: 70vh;
+}
+.heightForum{
+  height: 70vh;
+}
+
+@keyframes spin {
+  0% {
+    left: 0px;
+    top: 10px;
+    transform: rotateZ(180deg);
+  }
+
+  10% {
+    left: 10px;
+    top: 10px;
+    transform: rotateZ(90deg);
+  }
+
+  20% {
+    left: 20px;
+    top: 10px;
+    transform: rotateZ(90deg);
+  }
+
+  30% {
+    left: 30px;
+    top: 10px;
+    transform: rotateZ(90deg)
+  }
+
+  40% {
+    transform: rotateZ(0deg)
+  }
+
+  50% {
+    left: 30px;
+    top: -10px;
+    transform: rotateZ(-90deg)
+  }
+
+  70% {
+    left: 0px;
+    top: -10px;
+    transform: rotateZ(-90deg);
+  }
+
+  80% {
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    transform: rotateZ(-270deg)
+  }
+}
+@media only screen and (max-width: 992px) {
+  .scrollable-menu-topic {
+    max-height: 20vh;
+  }
+  .scrollable-menu-forum {
+    max-height: 60vh;
+  }
+  .heightTopic{
+    height: 20vh;
+  }
+  .heightForum{
+
+    height: 60vh
+  }
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
