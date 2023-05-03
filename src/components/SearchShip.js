@@ -39,7 +39,7 @@ function SearchShip() {
                 <option value="model">Model</option>
               </select>
             </div>
-            <div className="col-8 col-md-9">
+            <div className="col-7 col-md-9">
               <input
                 type="text"
                 className="form-control rounded-0"

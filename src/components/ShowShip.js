@@ -27,7 +27,7 @@ function ShowShip() {
     <section className="showShip mt-5 pb-5 ">
       <div className="container mb-3">
         <div className="row d-flex justify-content-end">
-          <div className="col-3 text-end">
+          <div className="col-12 col-md-3 text-end">
             <Link to="/loginSignup" className="btn btn-ninth fw-semibold">
               Forum SW
             </Link>
